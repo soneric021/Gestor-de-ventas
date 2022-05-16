@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Gestor de ventas</string>
+    <string name="required">Requerido</string>
+    <string name="name">Nombre:</string>
+    <string name="last_name">Apellido:</string>
+    <string name="identifier">Cédula:</string>
+    <string name="close">Salir</string>
+    <string name="next">Siguiente</string>
+    <string name="company_name">Razón social del emisor:</string>
+    <string name="rif">RIF</string>
+    <string name="invoice">RECIBO DE VENTA</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="_0_00">0.00</string>
+    <string name="finish">Finalizar</string>
+    <string name="welcome_message">Esta es mi representacion de la prueba \n del gestor de ventas \n Ericson Montero</string>
+    <string name="new_invoice">Nuevo \nRecibo</string>
+    <string name="invoice_list">Lista de \n recibos \n generados</string>
+    <string name="description">Descripción:</string>
+    <string name="price">Precio:</string>
+    <string name="_0">0</string>
+    <string name="prev">Anterior</string>
+    <string name="totalize">Totalizar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="are_you_sure_to_close">¿Estas seguro que quieres salir?</string>
+    <string name="client_name_lastName">Cliente: %1$s %2$s</string>
+    <string name="identifier_value">CI: %1$s</string>
+    <string name="code_value">Code: %1$s</string>
+    <string name="quantity_x_price">%1$s x %2$s</string>
+    <string name="code">Codigo</string>
+    <string name="amount_total_value">Monto Total: %1$s</string>
+    <string name="items_quantity">Cantidad de items: %1$s</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_main">
+    <fragment android:id="@+id/fragment_main"
+        android:label="The Factory HKA"
+        tools:layout="@layout/fragment_main"
+        android:name="com.rikson.gestordeventas.ui.MainFragment"
+        >
+        <action android:id="@+id/action_to_form"
+            app:destination="@id/fragment_collection_form" />
+
+        <action android:id="@+id/action_to_invoices"
+            app:destination="@id/fragment_invoices" />
+    </fragment>
+    <fragment android:id="@+id/fragment_collection_form"
+        android:label="Generar Recibo de Venta"
+        tools:layout="@layout/fragment_collection_form"
+        android:name="com.rikson.gestordeventas.ui.form.CollectionFormFragment"
+        >
+        <action android:id="@+id/action_to_invoice"
+            app:destination="@id/fragment_invoice"
+           >
+            <argument android:name="invoice_id"
+                app:argType="integer"
+                android:defaultValue="0"
+                />
+        </action>
+    </fragment>
+    <fragment android:id="@+id/fragment_invoices"
+        android:label="Recibos almacenados"
+        tools:layout="@layout/fragment_invoices"
+        android:name="com.rikson.gestordeventas.ui.invoices.InvoicesFragment"
+        />
+    <fragment android:id="@+id/fragment_invoice"
+        android:label="Recibo de venta generado"
+        tools:layout="@layout/fragment_invoice"
+        android:name="com.rikson.gestordeventas.ui.invoices.InvoiceFragment">
+        <argument android:name="invoice_id"
+            app:argType="integer"
+            android:defaultValue="0"
+            />
+        <action android:id="@+id/action_to_home"
+            app:destination="@id/fragment_main"
+            app:launchSingleTop="true"/>
+    </fragment>
+</navigation>
