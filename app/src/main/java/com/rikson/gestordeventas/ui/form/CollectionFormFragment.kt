@@ -87,7 +87,7 @@ class CollectionFormFragment : BaseFragment<FragmentCollectionFormBinding>(Fragm
     private fun showAlert() {
         MaterialAlertDialogBuilder(requireContext()).
             setMessage(getString(R.string.are_you_sure_to_close))
-            .setNegativeButton(getString(R.string.close)){ _, _ ->
+            .setNegativeButton(getString(R.string.cancel)){ _, _ ->
 
             }.setPositiveButton(getString(R.string.accept)){ _, _ ->
                     findNavController().navigateUp()

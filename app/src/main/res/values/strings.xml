@@ -23,6 +23,7 @@
     <string name="cancel">Cancelar</string>
     <string name="accept">Aceptar</string>
     <string name="are_you_sure_to_close">¿Estas seguro que quieres salir?</string>
+    <string name="are_you_sure_to_delete">¿Estas seguro que quieres eliminar todas las facturas?</string>
     <string name="client_name_lastName">Cliente: %1$s %2$s</string>
     <string name="identifier_value">CI: %1$s</string>
     <string name="code_value">Code: %1$s</string>

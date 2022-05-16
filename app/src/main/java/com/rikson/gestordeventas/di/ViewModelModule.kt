@@ -19,5 +19,5 @@ val viewmodelModule = module {
     ) }
 
     viewModel{ FormViewModel(invoiceUseCase = get())}
-    viewModel{ InvoiceViewModel(getInvoicesUseCase = get(), getInvoiceByIdUseCase = get()) }
+    viewModel{ InvoiceViewModel(invoiceUseCase = get() ) }
 }
